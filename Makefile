@@ -1,7 +1,7 @@
 up:
 	@docker-compose up -d --build --remove-orphans
 
-install: dotenv-config up composer-install
+install: dotenv-config up composer-install composer-dump-autoload
 
 down:
 	@docker-compose down
@@ -26,3 +26,6 @@ dotenv-config:
 
 composer-install:
 	@docker-compose run --rm php composer install
+
+composer-dump-autoload:
+	@docker-compose run --rm php composer dump-autoload
