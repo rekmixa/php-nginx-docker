@@ -25,9 +25,9 @@ services:
     restart: ${RESTART}
     labels:
       traefik.enable: "true"
-      traefik.frontend.rule: "Host:${DOMAIN}"
+      traefik.frontend.rule: "Host:${DOCKER_DOMAIN}"
     ports:
-     - 8086:80
+     - ${DOCKER_PORT}
     networks:
       - default
       - web
