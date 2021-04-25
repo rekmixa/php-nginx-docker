@@ -1,0 +1,7 @@
+{
+    "name": "docker/php-nginx",
+    "description": "PHP & Nginx with Docker",
+    "require": {},
+    "require-dev": {},
+    "scripts": {}
+}
