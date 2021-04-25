@@ -1,7 +1,9 @@
 {
     "name": "docker/php-nginx",
     "description": "PHP & Nginx with Docker",
-    "require": {},
+    "require": {
+        "php": ">=7.4"
+    },
     "require-dev": {},
     "scripts": {}
 }
